@@ -1,0 +1,143 @@
+body {
+	/* background: url(assets/cool-background.png)no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+}
+
+.container  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	width:100%;
+	margin: 20px auto 20px auto;
+	color: 11151c;
+	/* background-color: #7b88a0; */
+	opacity: 0.95;	
+}
+
+h1 {
+	font-size:10ex ;
+	margin-left: 120px;
+	margin-right: 120px;
+	font-family: 'Roboto Slab', serif;
+}
+
+h1 span {
+    
+    color: white;
+    text-shadow:
+    2px 2px 0 #000,
+    1px 1px 0 #000,
+    10px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.up-vote {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #555;
+    margin-top: 28px;
+    margin-left: 10px;
+}
+.up-vote div:hover {
+    cursor: pointer;
+}
+
+.rank {
+    margin-left: 120px;
+    margin-top: 18px;
+    height:100px;
+    padding: 5px;
+    font-size: 3.25ex;
+    font-family: 'Roboto Slab', serif;
+}
+.card {
+ width: 80%;
+ height:100px;
+ margin: 20px;
+ padding: 5px;
+ border-radius: 3px;
+ border: solid black 1px;
+	box-shadow: 20px 20px 2px -2px rgba(0,0,0,4);
+	/* background-color: #cdd3e0 ; */
+	font-family: 'Luxurious Roman', cursive;
+	opacity: 1;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+.card-title {
+margin-bottom: 10px;
+font-size: 3.25ex;
+font-family: 'Roboto Slab', serif;
+}
+
+.card-counter {
+	margin: auto;
+}
+/* nav styles start here */
+nav{
+	display: flex;
+	float: right;
+	margin-right: 50px;
+	font-family: 'Roboto Slab', serif;
+
+}
+.nav-item {
+	list-style: none;
+	padding:5px 10px;
+	border: solid black 1px;
+	border-radius: 25px;
+	margin: 5px;
+	display: inline;
+	justify-content: center;
+	box-shadow: 5px 5px 2px -2px rgba(0,0,0,4);
+
+}
+.nav-item a {
+	text-decoration: none;
+	color: black;
+
+}
+.nav-item a:hover {
+	cursor:pointer;
+
+}
+
+/* Nav items should be active on the corresponging page */
+
+.nav-item a:active {
+	background-color: #000000;
+	color: white;
+}
+
+.nav-item:hover {
+	background-color: lightgray;
+	cursor:pointer;
+}
+.nav-item:active {
+	background-color: #000000;
+	color: white;
+}
+
+/* Makes active page black and white */
+.nav-item:nth-child(5) a{
+	color: white;
+	background-color: black;
+} 
+.nav-item:nth-child(5) {
+	color: white;
+	background-color: black;
+} 
+
+/* Nav items end here */
+
