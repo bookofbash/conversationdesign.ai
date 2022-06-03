@@ -6,8 +6,10 @@
             <script async type="text/javascript" src="script.js"></script>
             <link rel="stylesheet" href="styles.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+
         </head>
         <div class="heading">
             <h1>Conversation Design <span class="text-outline">Resources</span></h1>
@@ -20,7 +22,7 @@
                             <li class="nav-item" class="is-active"><a href="#">Resources</a></li>
                             <li class="nav-item"><a href="/Users/BashHome/web_projects/start-page/jobs.html">Jobs</a></li>
                             <li class="nav-item"><a href="#">Tools</a></li>
-                            <li class="nav-item"><a href="#">News</a></li>
+                            <li class="nav-item"><a href="file:///Users/BashHome/web_projects/start-page/news.html">News</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,10 +31,10 @@
                 <div>
                     <nav class="resource-nav">
                         <ul>
-                            <li class="nav-item"><a href="#section-books">Books</a></li>
-                            <li class="nav-item"><a href="#section-courses">Courses</a></li>
-                            <li class="nav-item"><a href="#section-blogs">Blogs</a></li>
-                            <li class="nav-item"><a href="#section-podcasts">Podcasts</a></li>
+                            <li class="nav-item"><a href="#section-books-ancor">Books</a></li>
+                            <li class="nav-item"><a href="#section-courses-ancor">Courses</a></li>
+                            <li class="nav-item"><a href="#section-blogs-ancor">Blogs</a></li>
+                            <li class="nav-item"><a href="#section-podcasts-ancor">Podcasts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,7 +55,8 @@
         </div> -->
         <!-- Resources should be stored server-side using node.js/express or Python/Django -->
         <section>
-            <h2 id="section-books">Books</h2>
+            <div id="section-books-ancor"></div>
+            <h2 id="section-books"  class="section-heading">Books</h2>
             <div class= "container">
                 <div class="card">
                     <div class="card-title">Designing Voice User Interfaces</div>
@@ -83,21 +86,22 @@
             </div>
         </section>
         <section>
-            <h2 id="section-courses">Courses</h2>
+            <div id="section-courses-ancor"></div>
+            <h2 id="section-courses"  class="section-heading">Courses</h2>
             <div class= "container">
                 <div class="card">
                     <div class="card-title">Certified Rasa Developer</div>
-                    <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                    <div class="card-description">Get certified as a RASA developer</div>
                     <button onclick="window.location.href='https://learning.rasa.com/certification-study-guide/';" class="card-button">Sign up</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Conversation Design Institute</div>
-                    <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                    <div class="card-description">Take courses in conversation design, copywriting, and AI training</div>
                     <button onclick="window.location.href='#';" class="card-button">Sign up</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Cognigy</div>
-                    <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                    <div class="card-description">Get certified in conversation design with Cognigy in 3 hours</div>
                     <button onclick="window.location.href='https://academy.cognigy.com/courses/conversation-design-course';" class="card-button">Sign up</button>
                 </div>
                 <div class="card">
@@ -108,7 +112,8 @@
             </div>
         </section>
         <section>
-            <h2 id="section-blogs">Blogs</h2>
+            <div id="section-blogs-ancor"></div>
+            <h2 id="section-blogs"  class="section-heading">Blogs</h2>
             <div class="container">
                 <div class="card">
                     <div class="card-title">Blog Name 1</div>
@@ -118,57 +123,58 @@
                 <div class="card">
                     <div class="card-title">Blog Name 2</div>
                     <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <button onclick="window.location.href='https://tasks.office.com/TRTEN.onmicrosoft.com/en-US/Home/Planner#/plantaskboard?groupId=c263593b-1db1-4508-8dad-8020b43010ae&planId=z4_8yOL6PUqkygudToWPDWQAH6_T';"class="card-button">Let's go!</button>
+                    <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Blog Name 3</div>
                     <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <button onclick="window.location.href='https://legal-tr-com-qa-ams.ewp.thomsonreuters.com/en/support';"class="card-button">Let's go!</button>
+                    <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Blog Name 4</div>
                     <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <button onclick="window.location.href='https://confluence.thomsonreuters.com/display/CSP/Tone+of+voice';"class="card-button">Let's go!</button>
+                    <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Blog Name 5</div>
                     <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <button onclick="window.location.href='https://trten.sharepoint.com/:w:/r/sites/Emblaze/_layouts/15/Doc.aspx?sourcedoc=%7B0BC08871-DFE7-4CEE-BDA9-92BFF8433194%7D&file=Content%20Review%20Checklist.docx&action=default&mobileredirect=true&wdOrigin=TEAMS-ELECTRON.p2p.mw&wdExp=TEAMS-CONTROL&wdhostclicktime=1643745749079&cid=83be0026-3183-4111-b98d-09ac47b38a4a';"class="card-button">Let's go!</button>
+                    <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
                 </div>
                 <div class="card">
                     <div class="card-title">Blog Name 6</div>
                     <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                    <button onclick="window.location.href='https://dev.azure.com/tr-tax/Content/_wiki/wikis/Content%20Wiki/468/Resources';"class="card-button">Let's go!</button>
+                    <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
                 </div>
             </div>
         </section>
         <section>
-        <h2 id="section-podcasts">Podcasts</h2>
+        <div id="section-podcasts-ancor"></div>
+        <h2 id="section-podcasts"  class="section-heading">Podcasts</h2>
         <div class="container"> 
             <div class="card">
                 <div class="card-title">Podcast 1 </div>
                 <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <button onclick="window.location.href='https://trten.sharepoint.com/:p:/s/ContentSpecialists2/ETZ56FSqw4dCrOfDAKlrBFIBs9fmi11AK5_cSsp3ZAxj9A?email=Bashir.Harrell%40thomsonreuters.com&e=3Jxo0l';"class="card-button">Let's go!</button>
+                <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
             </div>
             <div class="card">
                 <div class="card-title">Podcast 2 </div>
                 <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <button onclick="window.location.href='https://trten.sharepoint.com/:w:/r/sites/Emblaze/_layouts/15/Doc.aspx?sourcedoc=%7BB5BFEF1B-3D09-468C-87E7-C69847A2B154%7D&file=Scope%20of%20Work%20template.docx&action=default&mobileredirect=true';"class="card-button">Let's go!</button>
+                <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
             </div>        
             <div class="card">
                 <div class="card-title">Podcast 3</div>
                 <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <button onclick="window.location.href='https://docs.google.com/document/d/1B077Yu89I8S4wDwt_hAfB72B08LDKkaDA0TJT0YMmWs/edit';"class="card-button">Let's go!</button>
+                <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
             </div>        
             <div class="card">
                 <div class="card-title">Podcast 4</div>
                 <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <button onclick="window.location.href='https://trten.sharepoint.com/sites/ChatbotOperations808/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=Z83tba&xsdata=MDN8MDF8fDE1OTI1N2RkMTlkZjQxOTViYmExZWIwMzFmYTgwN2E1fDYyY2NiODY0NmExYTRiNWQ4ZTFjMzk3ZGVjMWE4MjU4fDB8MHw2Mzc4MzgzMzgxMjkwMzQyNzh8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT0%3D&sdata=VGJxYVRPb0t3dHlkWHpJeXlPb1pWWkRULzlNbzBkSXZTRUZvdktrQS9rMD0%3D&ovuser=62ccb864%2D6a1a%2D4b5d%2D8e1c%2D397dec1a8258%2CBashir%2EHarrell%40thomsonreuters%2Ecom&OR=Teams%2DHL&CT=1648237033338&params=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMjAzMDcwMTYxMCJ9&cid=c44e8731%2De723%2D4009%2D9f87%2D9d940a371460&FolderCTID=0x012000D5C44AEE4044F3488F5B322243CBA5A0&id=%2Fsites%2FChatbotOperations808%2FShared%20Documents%2FDeep%20Dive%20QA%2FE%2DFile%20Acknoweldgements&viewid=5f142c37%2Df5db%2D4189%2Da542%2Db00b224d340e';"class="card-button">Let's go!</button>
+                <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
             </div> 
             <div class="card">
                 <div class="card-title">Podcast 5</div>
                 <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                <button onclick="window.location.href='https://thomsonreuters.brightidea.com/';"class="card-button">Let's go!</button>
+                <button onclick="window.location.href='#';"class="card-button">Let's go!</button>
             </div>   
         </div>
     </section>
