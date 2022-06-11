@@ -53,18 +53,18 @@
 
 	#section-courses-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 262px;
 	}
 	#section-blogs-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 262px;
 	}
 	#section-podcasts-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 262px;
 	}
 	#section-books{
-		margin-top: 200px;
+		margin-top: 260px;
 	}
 	.container  {
 		display: flex;
@@ -78,9 +78,9 @@
 	}
 	
 	h1{
-		font-size:4ex ;
+		font-size:5ex ;
 		margin-left: 0px;
-		margin-top: 120px;
+		margin-top: 140px;
 		max-width: 50%;
 		font-family: 'Roboto Slab', serif;
 		z-index: 100;
@@ -90,6 +90,10 @@
 	h2{
 		font-size:5ex ;
 		font-family: 'Roboto Slab', serif;
+		border: none;
+		/* box-shadow: 0px 4px 0px 0px rgba(0,0,0,4); */
+		width: fit-content;
+		padding-right: 2px;
 	}
 		span {
 			color: white;
@@ -112,8 +116,8 @@
 			background-color: white;
 			font-family: 'Luxurious Roman', cursive;
 			width: 100%;
+			height:240px;
 			padding-top: 40px;
-			padding-left: 0px;
 		}
 		.resource-nav{
 			display: flex;
@@ -128,7 +132,13 @@
 			float: right;
 			font-family: 'Roboto Slab', serif;
 		
-		
+		}
+
+		nav ul{
+			padding-inline-start: 10px;
+			padding-right: 20px;
+
+
 		}
 	
 		.nav-item {
@@ -136,11 +146,11 @@
 			padding:5px 5px;
 			border: solid black 1px;
 			border-radius: 25px;
-			margin: 5px;
+			margin: 2px;
 			display: inline;
 			justify-content: center;
 			box-shadow: 5px 5px 2px -2px rgba(0,0,0,4);
-			font-size: x-small;
+			font-size: 2ex;
 		}
 		
 		.resource-nav .nav-item {
@@ -152,6 +162,13 @@
 			display: inline;
 			justify-content: center;
 			box-shadow: 5px 5px 2px -2px rgba(0,0,0,4);
+			font-size: 3ex;
+
+		}
+		.resource-nav ul {
+			border: solid black 1px;;
+			border-radius: 25px;
+			padding: 12px;
 		}
 		.nav-item a {
 			text-decoration: none;
@@ -244,6 +261,7 @@
 	}
 	.section-heading{
 		font-size: 3em;
+		color: red;
 	}
 
 	#section-books-ancor{
