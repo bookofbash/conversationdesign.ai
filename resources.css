@@ -9,7 +9,68 @@
 	.heading{
 		display: flex;
 	}
+	h1{
+		font-size:2.25rem ;
+		margin-left: 0px;
+		margin-top: 140px;
+		max-width: 50%;
+		font-family: 'Roboto Slab', serif;
+		z-index: 100;
+		position: fixed;
+	}
+	h2{
+		font-size:2rem ;
+		font-family: 'Roboto Slab', serif;
+		border: none;
+		width: fit-content;
+		padding-right: 2px;
+	}
+	span {
+		color: white;
+		text-shadow:
+		2px 2px 0 #000,
+		1px 1px 0 #000,
+		6px -1px 0 #000,
+		-1px -1px 0 #000;
+	}
+	
+	
+	section{
+		margin-left: 20px;
+	}
+	/* Ancors for in-page navigation */
 
+	#section-books-ancor{
+		position: relative;
+		padding-top: 30px;
+	}
+
+	#section-courses-ancor{
+		position: relative;
+		padding-top: 262px;
+	}
+	#section-blogs-ancor{
+		position: relative;
+		padding-top: 262px;
+	}
+	#section-podcasts-ancor{
+		position: relative;
+		padding-top: 262px;
+	}
+	#section-books{
+		margin-top: 280px;
+	}
+
+	/*Main content container */
+	.container  {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		width:100%;
+		margin: 20px auto 20px auto;
+		color: 11151c;
+		opacity: 0.95;	
+	}
 	.card {
 		width: 80%;
 		position: relative;
@@ -35,7 +96,8 @@
 	}
 
 	.card-button{
-		margin-top: 20px;
+		margin-top: 40px;
+		margin-left: 50%;
 		background: linear-gradient(to bottom, #030303 5%, #0f0e0e 100%);
 		font-size: 2ex;
 		border-radius: 3px;
@@ -50,69 +112,9 @@
 		background-color: white;
 		color: black;
 	}
-	
-	section{
-		margin-left: 20px;
-	}
-	/* Ancors for in-page navigation */
 
-	#section-books-ancor{
-		position: relative;
-		padding-top: 30px;
-	}
-
-	#section-courses-ancor{
-		position: relative;
-		padding-top: 262px;
-	}
-	#section-blogs-ancor{
-		position: relative;
-		padding-top: 262px;
-	}
-	#section-podcasts-ancor{
-		position: relative;
-		padding-top: 262px;
-	}
-	#section-books{
-		margin-top: 260px;
-	}
-
-	/*Main content container */
-	.container  {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: left;
-		width:100%;
-		margin: 20px auto 20px auto;
-		color: 11151c;
-		opacity: 0.95;	
-	}
 	
-	h1{
-		font-size:2.25rem ;
-		margin-left: 0px;
-		margin-top: 140px;
-		max-width: 50%;
-		font-family: 'Roboto Slab', serif;
-		z-index: 100;
-		position: fixed;
-	}
-	
-	h2{
-		font-size:2rem ;
-		font-family: 'Roboto Slab', serif;
-		border: none;
-		width: fit-content;
-		padding-right: 2px;
-	}
-	span {
-		color: white;
-		text-shadow:
-		2px 2px 0 #000,
-		1px 1px 0 #000,
-		6px -1px 0 #000,
-		-1px -1px 0 #000;
-	}
+		/* nav styles start here */
 	.nav-container{
 		display: block;
 		flex-direction: row-reverse;
@@ -126,6 +128,7 @@
 		width: 100%;
 		height:300px;
 		padding-top: 40px;
+		box-shadow:  10px 10px 10px 10px #FFFFFF;
 	}
 	.resource-nav{
 		/* Display flex for visibility */
@@ -203,7 +206,10 @@
 		cursor:pointer;
 		background-color: inherit;
 	}
-
+	.is-active:hover{
+		color: black;
+	}
+		
 		
 		
 		/* Nav items should be active on the corresponging page */
@@ -233,22 +239,9 @@
 	
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 1200px) {
-	h1{
-		font-size:4ex ;
-		margin-left: 0px;
-		margin-top: 120px;
-		max-width: 50%;
-		font-family: 'Roboto Slab', serif;
-		z-index: 100;
-		position: fixed;
-	}
-} */
+
 
 	/* For large screens */
-
-
 @media (min-width: 600px){
 	/* body {
 		background: url(assets/cool-background.png)no-repeat center center fixed; 
@@ -276,6 +269,7 @@
 		background-color: white;
 		font-family: 'Luxurious Roman', cursive;
 		width: 100%;
+		height: 600px;
 		padding-top: 40px;
 		padding-left: 0px;
 	}
@@ -285,26 +279,29 @@
 	}
 	.section-heading{
 		font-size: 3em;
-		color: red;
 	}
+
+	#section-books{
+		padding-top: 80px;
+	} 
 
 	#section-books-ancor{
 		position: relative;
-		top: -240px;
+		top: -260px;
 
 	}
 
 	#section-courses-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 300px;
 	}
 	#section-blogs-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 300px;
 	}
 	#section-podcasts-ancor{
 		position: relative;
-		padding-top: 200px;
+		padding-top: 300px;
 	}
 	.container  {
 		display: flex;
@@ -317,14 +314,13 @@
 		opacity: 0.95;	
 	}
 	h1{
-		font-size:10ex ;
-		margin-left: 100px;
-		margin-right: 0px;
-		margin-top: 20px;
+		font-size:6.25rem ;
+		margin-left: 20px;
+		margin-top: 60px;
+		max-width: 70%;
 		font-family: 'Roboto Slab', serif;
-		max-width: 55%;
+		z-index: 100;
 		position: fixed;
-		z-index: 81;
 	}
 		span {
 			
@@ -354,9 +350,9 @@
 	}
 	
 	.card {
-	 width: 200px;
+	 width: 300px;
 	 position: relative;
-	 height:200px;
+	 height:300px;
 	 margin: 20px;
 	 padding: 5px;
 	 border-radius: 3px;
@@ -397,40 +393,57 @@
 		
 	}
 
+	.nav-container{
+		display: block;
+		flex-direction: row-reverse;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 80;
+		border-radius: 3px;
+		background-color: white;
+		font-family: 'Luxurious Roman', cursive;
+		width: 100%;
+		height:440px;
+		padding-top: 40px;
+	}
 	.resource-nav{
-		display: flex;
+		/* Display flex for visibility */
+		display: none;
 		position: relative;
 		font-family: 'Roboto Slab', serif;
-		margin-right: 20px;
+		margin-right: 10px;
 		clear: both;
-		font-size: smaller;
+		font-size: .5rem;
+		margin-top: -18px;
 	}
 
 	
 	nav{
 		display: flex;
 		float: right;
-		margin-right: 50px;
 		font-family: 'Roboto Slab', serif;
-	
 	}
 
-
+	nav ul{
+		padding-inline-start: 10px;
+		padding-right: 20px;
+	}
 
 	.nav-item {
 		list-style: none;
-		padding:5px 10px;
+		padding:5px 5px;
 		border: solid black 1px;
 		border-radius: 25px;
-		margin: 5px;
+		margin: 2px;
 		display: inline;
 		justify-content: center;
 		box-shadow: 5px 5px 2px -2px rgba(0,0,0,4);
-	
+		font-size: 1rem;
 	}
 	.nav-item a {
 		text-decoration: none;
-		color: black;
+		color: inherit;
 	
 	}
 	.nav-item a:hover {
