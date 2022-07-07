@@ -3,7 +3,8 @@ import got  from "got";
 import jsdom from "jsdom";
 const { JSDOM } = jsdom;
 
-const conversationDesignInstitute = {
+//TODO: Make sources into schema for db
+const cdi = {
     blogTitle:"",
     url:""
 }
@@ -49,11 +50,11 @@ for (let i = 0; i < urls.length; i++ ){
 
         switch(urls[i]) {
             case "https://www.conversationdesigninstitute.com/blog":
-                conversationDesignInstitute.url = links[17];
-                conversationDesignInstitute.blogTitle = titles[12];
+                cdi.url = links[17];
+                cdi.blogTitle = titles[12];
 
-                console.log(conversationDesignInstitute.url);
-                console.log(conversationDesignInstitute.blogTitle);
+                console.log(cdi.url);
+                console.log(cdi.blogTitle);
 
                 break;
             case "https://www.liveperson.com/blog/conversational-ai/":
