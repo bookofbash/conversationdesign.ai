@@ -32,7 +32,9 @@ const urls = [
         // "https://www.liveperson.com/blog/conversational-ai/",
         // "https://www.ibm.com/blogs/watson/",
         // "https://montrealethics.ai/?s=conversational+ai",
-        "https://vux.world/articles/"
+        // "https://vux.world/articles/",
+        // "https://venturebeat.com/tag/nlp/",
+            "https://cobusgreyling.medium.com/"
             ];
 
 for (let i = 0; i < urls.length; i++ ){
@@ -69,9 +71,17 @@ for (let i = 0; i < urls.length; i++ ){
                 console.log(titles[37])
                 break;
             case "https://vux.world/articles/": 
-            console.log(links[26])
-            console.log(titles[26])
-            break;
+                console.log(links[26])
+                console.log(titles[26])
+                break;
+            case "https://venturebeat.com/tag/nlp/": 
+                console.log(links[67])
+                console.log(titles[68])
+                break;
+            case "https://cobusgreyling.medium.com/": 
+                console.log("https://cobusgreyling.medium.com/"+links[11])
+                console.log(titles[12].substr(0,47))
+                break;
             default:
                 console.log("Error")
         }
