@@ -34,7 +34,11 @@ const urls = [
         // "https://montrealethics.ai/?s=conversational+ai",
         // "https://vux.world/articles/",
         // "https://venturebeat.com/tag/nlp/",
-            "https://cobusgreyling.medium.com/"
+            // "https://cobusgreyling.medium.com/",
+            // "https://www.analyticsinsight.net/category/conversational-ai/",
+            // "https://uxmag.com/latest-articles",
+            "https://voicebot.ai/virtual-humans/"
+            
             ];
 
 for (let i = 0; i < urls.length; i++ ){
@@ -42,7 +46,7 @@ for (let i = 0; i < urls.length; i++ ){
     let titles =[];
     got(urls[i]).then(response => {
         const dom = new JSDOM(response.body);
-        
+
         dom.window.document.querySelectorAll('a').forEach(link => {
         links.push(link.href);
         })
@@ -81,6 +85,19 @@ for (let i = 0; i < urls.length; i++ ){
             case "https://cobusgreyling.medium.com/": 
                 console.log("https://cobusgreyling.medium.com/"+links[11])
                 console.log(titles[12].substr(0,47))
+                break;
+                //Todo: Make this work
+            case "https://www.analyticsinsight.net/category/conversational-ai/": 
+                console.log(links)
+                console.log(titles)
+                break;
+            case "https://uxmag.com/latest-articles": 
+                console.log(links[22])
+                console.log(titles[22])
+                break;
+            case "https://voicebot.ai/virtual-humans/": 
+                console.log(links[89])
+                console.log(titles[95])
                 break;
             default:
                 console.log("Error")
